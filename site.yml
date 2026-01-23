@@ -1,6 +1,6 @@
 ---
 - name: windows rolling update
-  hosts: 10.21.1.186
+  hosts: all
   tasks:
     - name: Install all critical and security updates
       ansible.windows.win_updates:
