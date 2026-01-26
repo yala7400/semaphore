@@ -9,4 +9,4 @@
           - SecurityUpdates
         state: installed
         reboot: true
-        log_path: C:\ansible.txt
+        log_path: '%USERPROFILE%\ansible.txt'
