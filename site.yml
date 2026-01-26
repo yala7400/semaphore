@@ -7,6 +7,7 @@
         category_names:
           - CriticalUpdates
           - SecurityUpdates
+          - UpdateRollUps
         state: installed
         reboot: true
         log_path: '%USERPROFILE%\ansible.txt'
