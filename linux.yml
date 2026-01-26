@@ -1,6 +1,6 @@
 ---
 - name: Update and upgrade Ubuntu servers
-  hosts: ubuntu_servers        # Define your inventory group in hosts file
+  hosts: linux_machines        # Define your inventory group in hosts file
   become: yes                  # Run tasks with sudo privileges
   gather_facts: yes
 
