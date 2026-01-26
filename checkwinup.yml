@@ -1,0 +1,12 @@
+---
+- name: Search-Only, return list of found updates
+  hosts: rest_laptops
+  tasks:
+    - name: search for updates
+      ansible.windows.win_updates:
+        category_names:
+          - CriticalUpdates
+          - SecurityUpdates
+          - UpdateRollUps
+        state: searched
+        log_path: '%USERPROFILE%\ansible.txt'
