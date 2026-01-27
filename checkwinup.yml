@@ -2,7 +2,7 @@
 - name: Search-Only, return list of found updates
   hosts: rest_laptops
   vars:
-    ansible_remote_tmp: "/tmp/ansible-$USER"
+    ansible_remote_tmp: "/tmp/ansible-ansible"
   tasks:
     - name: search for updates
       ansible.windows.win_updates:
