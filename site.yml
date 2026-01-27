@@ -1,6 +1,8 @@
 ---
 - name: windows rolling update
   hosts: rest_laptops
+   vars:
+    ansible_remote_tmp: /tmp/.ansible-${USER}
   tasks:
     - name: Install all critical and security updates
       ansible.windows.win_updates:
