@@ -1,3 +1,4 @@
 - name: Search and download Windows updates without installing them
+  hosts: rest_laptops
   ansible.windows.win_updates:
     state: downloaded
