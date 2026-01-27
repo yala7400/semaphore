@@ -5,7 +5,7 @@
   become_method: runas
   become_user: Administrator
   vars:
-    ansible_user: ansible
+    ansible_user: hcso
     ansible_password: Z3i0pZS3B5YPjg3p5cIPVHd/KUo5FKDS26FDQdsirSY=
     ansible_remote_tmp: C:\Users\hcso\tmp\.ansible\tmp
   tasks:
