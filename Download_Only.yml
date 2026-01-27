@@ -9,10 +9,10 @@
     ansible_password: radiotech
     ansible_remote_tmp: C:\Users\hcso\tmp\.ansible\tmp
   tasks:
-- name: Search and download
-  ansible.windows.win_updates:
-    category_names:
-      - SecurityUpdates
-      - CriticalUpdates
-      - UpdateRollups
-    state: downloaded
+    - name: Search and download
+      ansible.windows.win_updates:
+        category_names:
+          - SecurityUpdates
+          - CriticalUpdates
+          - UpdateRollups
+       state: downloaded
