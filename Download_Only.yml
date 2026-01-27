@@ -15,4 +15,4 @@
           - SecurityUpdates
           - CriticalUpdates
           - UpdateRollups
-       state: downloaded
+        state: downloaded
