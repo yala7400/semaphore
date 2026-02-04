@@ -1,6 +1,6 @@
 ---
 - name: windows rolling update
-  hosts: rest_laptops
+  hosts: windows
   become: yes
   become_method: runas
   become_user: Administrator
