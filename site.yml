@@ -2,7 +2,7 @@
 - name: windows rolling update
   hosts: windows
   become: False
-  gather_facts: false
+  gather_facts: true
   vars:
     ansible_user: ansible
     ansible_password: Z3i0pZS3B5YPjg3p5cIPVHd/KUo5FKDS26FDQdsirSY=
