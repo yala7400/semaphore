@@ -1,12 +1,12 @@
 ---
 - name: Search-Only, return list of found updates
-  hosts: rest_laptops
-  become: yes
-  become_method: runas
-  become_user: Administrator
+  hosts: windows
+  become: false
+  gather_facts: false
   vars:
     ansible_user: ansible
     ansible_password: Z3i0pZS3B5YPjg3p5cIPVHd/KUo5FKDS26FDQdsirSY=
+    ansible_connection: winrm
     ansible_remote_tmp: C:\Users\hcso\tmp\.ansible\tmp
   tasks:
     - name: search for updates
