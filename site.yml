@@ -13,6 +13,8 @@
       ansible.windows.win_updates:
         category_names:
           - SecurityUpdates
+          - CriticalUpdates
+          - UpdateRollups
         state: installed
         reboot: true
         log_path: '%USERPROFILE%\ansible.txt'
