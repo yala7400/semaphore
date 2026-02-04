@@ -7,7 +7,7 @@
     ansible_user: ansible
     ansible_password: Z3i0pZS3B5YPjg3p5cIPVHd/KUo5FKDS26FDQdsirSY=
     ansible_connection: winrm
-    ansible_remote_tmp: '%USERPROFILE%\ansible.txt'
+    ansible_remote_tmp: %USERPROFILE%\ansible.txt
   tasks:
     - name: Install all critical and security updates
       ansible.windows.win_updates:
