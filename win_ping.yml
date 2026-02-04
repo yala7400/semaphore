@@ -3,6 +3,10 @@
   hosts: windows
   become: false
   gather_facts: false
+  vars:
+    ansible_user: ansible
+    ansible_password: Z3i0pZS3B5YPjg3p5cIPVHd/KUo5FKDS26FDQdsirSY=
+    ansible_connection: winrm
   tasks: 
     - name: test connection
       ansible.windows.win_ping:
