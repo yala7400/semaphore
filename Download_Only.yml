@@ -1,6 +1,6 @@
 ---
 - name: Search and download Windows updates without installing them
-  hosts: rest_laptops
+  hosts: windows
   become: false
   gather_facts: false
   vars:
