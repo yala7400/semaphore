@@ -6,7 +6,7 @@
    - name: download win_update file
      ansible.builtin.get_url:
        url: https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/defu/2025/08/securityhealthsetup_d50fbd3731e8dcceb40dedececac7aecbbc9f931.exe
-       dest: C:\Users\ansible\win_updates
+       dest: /home/tech
        mode: '0644'
-       owner: ansible
+       owner: tech
        
