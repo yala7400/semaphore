@@ -1,0 +1,4 @@
+---
+- name: win_ping module demo
+  hosts: windows
+  become: false
