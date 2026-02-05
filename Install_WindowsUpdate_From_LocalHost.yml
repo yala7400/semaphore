@@ -10,5 +10,5 @@
   tasks: 
     - name: Install Windows update from local file
       ansible.windows.win_package:
-        path: C:\securityhealthsetup_d50fbd3731e8dcceb40dedececac7aecbbc9f931.msu
+        path: C:\securityhealthsetup_1528aebc5e90a333bf0f8a3f0d98b458311581fa.exe
         arguments: /quiet /norestart
