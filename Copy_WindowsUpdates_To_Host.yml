@@ -7,4 +7,6 @@
      ansible.windows.win_copy:
        src: /home/tech/securityhealthsetup_d50fbd3731e8dcceb40dedececac7aecbbc9f931.exe
        dest: \\10.21.1.200\Users\ansible\win_updates
+       mode: '0644'
+       owner: tech
     
