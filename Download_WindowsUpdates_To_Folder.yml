@@ -1,6 +1,6 @@
 ---
 - name: download winupdate files
-  hosts: windows
+  hosts: linux_machines
   become: false
   tasks: 
    - name: download win_update file
