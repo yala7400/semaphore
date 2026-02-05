@@ -1,0 +1,14 @@
+---
+- name: install win updates locally
+  hosts: windows
+  become: false
+  gather_facts: false
+  vars:
+    ansible_user: ansible
+    ansible_password: Z3i0pZS3B5YPjg3p5cIPVHd/KUo5FKDS26FDQdsirSY=
+    ansible_connection: winrm
+  tasks: 
+    - name: Install Windows update from local file
+      ansible.windows.win_package:
+        path: C:\Users\ansible\win_updates\securityhealthsetup_d50fbd3731e8dcceb40dedececac7aecbbc9f931.exe
+        arguments: /quiet /norestart
