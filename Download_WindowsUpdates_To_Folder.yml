@@ -1,7 +1,7 @@
 ---
 - name: download winupdate files
   hosts: linux_machines
-  become: false
+  become: yes
   tasks: 
    - name: download win_update file
      ansible.builtin.get_url:
