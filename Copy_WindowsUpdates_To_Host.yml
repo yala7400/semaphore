@@ -1,14 +1,12 @@
 ---
 - name: copy windowsUpdates to host
   hosts: linux_machines
-  become: yes
-  become_method: runas
-  become_user: ansible
+  become: false
   tasks:
    - name: copy files to host
      ansible.windows.win_copy:
-       src: /home/tech/Pictures
-       dest: \\10.21.1.200\Users\ansible\win_updates
+       src: /home/tech/securityhealthsetup_d50fbd3731e8dcceb40dedececac7aecbbc9f931.exe
+       dest: \\10.21.1.200\Users\ansible\win_updates\securityhealthsetup_d50fbd3731e8dcceb40dedececac7aecbbc9f931.exe
        mode: '0644'
        owner: tech
     
