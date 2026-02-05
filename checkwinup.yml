@@ -7,7 +7,7 @@
     ansible_user: ansible
     ansible_password: Z3i0pZS3B5YPjg3p5cIPVHd/KUo5FKDS26FDQdsirSY=
     ansible_connection: winrm
-    ansible_remote_tmp: C:\Users\hcso\tmp\.ansible\tmp
+    ansible_remote_tmp: C:\Users\ansible\tmp\.ansible\tmp
   tasks:
     - name: search for updates
       ansible.windows.win_updates:
