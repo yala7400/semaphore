@@ -1,7 +1,7 @@
 ---
 - name: copy windowsUpdates to host
   hosts: linux_machines
-  become: yes
+  become: false
   tasks:
    - name: copy files to host
      ansible.windows.win_copy:
