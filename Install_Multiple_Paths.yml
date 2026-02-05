@@ -8,7 +8,11 @@
     ansible_password: Z3i0pZS3B5YPjg3p5cIPVHd/KUo5FKDS26FDQdsirSY=
     ansible_connection: winrm
   tasks: 
-    - name: Install Windows update from local file
+    - name: Install Windows update from local file 2
       ansible.windows.win_package:
-        path: C:\updateplatform.arm64fre_be48cea7150940070027bef828bdc3d1ffd5c930.exe
-
+        path: C:\windows11.0-kb5066131-arm64-ndp481_3beead8035fa38f397904cc3f407f234cc7e1c13.msu
+  tasks: 
+    - name: Install Windows update from local file 3
+      ansible.windows.win_package:
+        path: C:\windows-kb890830-v5.138_57fca59c88ecd7eeb0ce317823e8e7a2510a0580.exe
+        arguments: /quiet /norestart
