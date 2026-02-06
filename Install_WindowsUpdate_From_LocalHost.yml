@@ -3,6 +3,7 @@
   hosts: windows
   become: yes
   become_method: runas
+  become_user: Administrator
   gather_facts: true
   vars:
     ansible_user: ansible
