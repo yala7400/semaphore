@@ -12,5 +12,5 @@
   tasks: 
     - name: Install Windows update from local file
       ansible.windows.win_package:
-        path: \\10.21.1.185\rest_updates\REST_UPDATES\updateplatform.arm64fre_be48cea7150940070027bef828bdc3d1ffd5c930.exe
+        path: \\10.21.1.185\rest_updates\REST_UPDATES\windows11.0-kb5066131-arm64-ndp481_3beead8035fa38f397904cc3f407f234cc7e1c13.msu
         arguments: /quiet /norestart
