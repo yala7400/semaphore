@@ -1,0 +1,51 @@
+---
+- name: Download multiple files using get_url
+  hosts: linux_machines
+  become: yes
+  tasks:
+    - name: Download files from multiple URLs
+      ansible.builtin.get_url:
+      ansible.builtin.get_url:  
+        url: "{{ item.url }}"
+        dest:  "{{ item.dest }}"
+        mode: '0644'
+        owner: tech
+      loop:
+        - { url: "https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/uprl/2025/12/windows-kb890830-v5.138_57fca59c88ecd7eeb0ce317823e8e7a2510a0580.exe", dest: "/home/tech/REST_UPDATES" }
+        - { url: "https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/defu/2025/12/updateplatform.arm64fre_be48cea7150940070027bef828bdc3d1ffd5c930.exe", dest: "/home/tech/REST_UPDATES" }
+        - { url: "https://catalog.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/3541f8bc-7744-458c-801e-805387fe2943/public/windows11.0-kb5066131-arm64-ndp481_3beead8035fa38f397904cc3f407f234cc7e1c13.msu", dest: "/home/tech/REST_UPDATES" }
+        - { url: "https://catalog.s.download.windowsupdate.com/d/msdownload/update/software/defu/2025/04/securityhealthsetup_1528aebc5e90a333bf0f8a3f0d98b458311581fa.exe", dest: "/home/tech/REST_UPDATES" }
+
+
+- name: install win updates locally
+  hosts: windows
+  become: yes
+  become_method: runas
+  become_user: hcso
+  gather_facts: true
+  vars:
+    ansible_user: ansible
+    ansible_password: Z3i0pZS3B5YPjg3p5cIPVHd/KUo5FKDS26FDQdsirSY=
+    ansible_connection: winrm
+  tasks: 
+    - name: Install Windows update from local file
+      ansible.windows.win_package:
+        path: \\10.21.1.185\rest_updates\REST_UPDATES\securityhealthsetup_1528aebc5e90a333bf0f8a3f0d98b458311581fa.exe
+        arguments: /quiet /norestart
+
+
+- name: install win updates locally
+  hosts: windows
+  become: yes
+  become_method: runas
+  become_user: hcso
+  gather_facts: true
+  vars:
+    ansible_user: ansible
+    ansible_password: Z3i0pZS3B5YPjg3p5cIPVHd/KUo5FKDS26FDQdsirSY=
+    ansible_connection: winrm
+  tasks: 
+    - name: Install Windows update from local file
+      ansible.windows.win_package:
+        path: \\10.21.1.185\rest_updates\REST_UPDATES\securityhealthsetup_1528aebc5e90a333bf0f8a3f0d98b458311581fa.exe
+        arguments: /quiet /norestart
