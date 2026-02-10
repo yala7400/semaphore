@@ -2,7 +2,7 @@
 - name: Download multiple files using get_url
   hosts: linux_machines
   become: yes
-  become_password: Z3i0pZS3B5YPjg3p5cIPVHd/KUo5FKDS26FDQdsirSY=
+  become_user: tech
   tasks:
     - name: Download files from multiple URLs
       ansible.builtin.get_url:
