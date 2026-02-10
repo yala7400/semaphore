@@ -4,7 +4,7 @@
   become: yes
   become_method: runas
   become_user: hcso
-  gather_facts: true
+  gather_facts: false
   vars:
     ansible_user: ansible
     ansible_password: Z3i0pZS3B5YPjg3p5cIPVHd/KUo5FKDS26FDQdsirSY=
