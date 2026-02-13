@@ -12,5 +12,10 @@
   tasks: 
     - name: Install Windows update from local file
       ansible.windows.win_package:
-        path: \\10.21.1.185\rest_windows_updates\REST_UPDATES\windows11.0-kb5075897-x64_5ede2ebc479fbdf06554d778b3df6a8383a9033a.msu
+        path: \\10.21.1.185\rest_windows_updates\REST_UPDATES\windows11.0-kb5075907-x64_3c0bd7edec22ad2cc4d629ee155994e3aa9fbf35.cab
+        arguments: /quiet /norestart
+   tasks: 
+    - name: Install Windows update from local file
+      ansible.windows.win_package:
+        path: \\10.21.1.185\rest_windows_updates\REST_UPDATES\windows11.0-kb5077373-x64_8c2eeb32cace3652438ea1e53f15beccd7b1f70e.cab
         arguments: /quiet /norestart
