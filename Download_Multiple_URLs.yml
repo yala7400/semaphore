@@ -11,7 +11,6 @@
         mode: '0644'
         owner: tech
       loop:
-        - { url: "https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/uprl/2025/12/windows-kb890830-v5.138_57fca59c88ecd7eeb0ce317823e8e7a2510a0580.exe", dest: "/home/tech/REST_UPDATES" }
-        - { url: "https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/defu/2025/12/updateplatform.arm64fre_be48cea7150940070027bef828bdc3d1ffd5c930.exe", dest: "/home/tech/REST_UPDATES" }
-        - { url: "https://catalog.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/3541f8bc-7744-458c-801e-805387fe2943/public/windows11.0-kb5066131-arm64-ndp481_3beead8035fa38f397904cc3f407f234cc7e1c13.msu", dest: "/home/tech/REST_UPDATES" }
-        - { url: "https://catalog.s.download.windowsupdate.com/d/msdownload/update/software/defu/2025/04/securityhealthsetup_1528aebc5e90a333bf0f8a3f0d98b458311581fa.exe", dest: "/home/tech/REST_UPDATES" }
+        - { url: "https://catalog.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/6a205b6d-707b-4860-a00a-f00fa5be9e6f/public/windows11.0-kb5071417-arm64_0fbcfe5586583fb737a8b1347ebdc3aeb7b92beb.msu", dest: "/home/tech/REST_UPDATES" }
+        - { url: "https://catalog.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/7e819a39-0e82-4f80-bacb-71b3f6632f3d/public/windows11.0-kb5071417-x64_e19910906e0392876385744f955c05495a4fb16c.msu", dest: "/home/tech/REST_UPDATES" }
+
