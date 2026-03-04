@@ -3,7 +3,7 @@
   hosts: windows
   become: yes
   become_method: runas
-  become_user: hcso
+  become_user: anyamande
   gather_facts: false
   vars:
     ansible_user: ansible
