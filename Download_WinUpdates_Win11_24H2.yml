@@ -11,6 +11,7 @@
         mode: '0644'
         owner: tech
       loop:
-        - { url: "https://catalog.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/07012b06-1909-470c-ad1c-b3c542a02527/public/windows11.0-kb5075941-x64_550053e227ce7d6e109108e05aa816eb8cd76a91.msu", dest: "/home/tech/REST_UPDATES/Win11_24H2" }
-        - { url: "https://catalog.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/a47993b8-deff-4eac-b120-9002344b60bf/public/windows11.0-kb5076124-x64_f5a481145d739c5569e4e9e742017366a3eb43c3.cab", dest: "/home/tech/REST_UPDATES/Win11_24H2" }
-        - { url: "https://catalog.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/8283a948-0c07-46e2-9386-89e06e15c97c/public/windows11.0-kb5077374-x64_3bcad59a0c1ba159a9e8f19b75e96c507373860f.cab", dest: "/home/tech/REST_UPDATES/Win11_24H2" }
+        - { url: "https://catalog.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/d8b7f92b-bd35-4b4c-96e5-46ce984b31e0/public/windows11.0-kb5043080-x64_953449672073f8fb99badb4cc6d5d7849b9c83e8.msu", dest: "/home/tech/REST_UPDATES/Win11_24H2" }
+        - { url: "https://catalog.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/b3d0f58f-6b73-4d8b-927e-5da83900f1c5/public/windows11.0-kb5072359-x64_9de812f726178f4c43c10ad84a8d6168daf7260d.msu", dest: "/home/tech/REST_UPDATES/Win11_24H2" }
+        - { url: "https://catalog.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/5315757b-0dc6-4282-a148-c7bf0b6b0e90/public/windows11.0-kb5068861-x64_acc4fe9c928835c0d44cdc0419d1867dbd2b62b2.msu", dest: "/home/tech/REST_UPDATES/Win11_24H2" }
+        - { url: "https://catalog.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/5315757b-0dc6-4282-a148-c7bf0b6b0e90/public/windows11.0-kb5068861-x64_acc4fe9c928835c0d44cdc0419d1867dbd2b62b2.msu", dest: "/home/tech/REST_UPDATES/Win11_24H2" }
