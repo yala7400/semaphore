@@ -1,7 +1,7 @@
 ---
 - name: install win updates locally
   hosts: windows
-  become: true
+  become: false
   become_method: runas
   become_user: hcso
   gather_facts: true
