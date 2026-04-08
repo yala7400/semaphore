@@ -1,10 +1,10 @@
 ---
 - name: install win updates locally
   hosts: windows
-  become: false
+  become: true
   become_method: runas
   become_user: hcso
-  gather_facts: false
+  gather_facts: true
   vars:
     ansible_user: ansible
     ansible_password: Z3i0pZS3B5YPjg3p5cIPVHd/KUo5FKDS26FDQdsirSY=
@@ -12,5 +12,5 @@
   tasks: 
     - name: Install Windows update from local file
       ansible.windows.win_package:
-        path: \\10.21.1.185\rest_windows_updates\REST_UPDATES\windows11.0-kb5075941-x64_550053e227ce7d6e109108e05aa816eb8cd76a91.msu
+        path: \\10.21.1.185\rest_windows_updates\REST_UPDATES\windows11.0-kb5078883-x64_ad6670dbea0da64763fd15b25ac1d6dcd966fdca.msu
         arguments: /quiet /norestart
